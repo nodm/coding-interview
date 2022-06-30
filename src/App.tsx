@@ -1,25 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+import MoviesList from './MovieList';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        <h1>STAR WARS MOVIES IN ORDER: HOW TO WATCH THE SAGA CHRONOLOGICALLY</h1>
+        <hr/>
       </header>
-    </div>
+      <main>
+        <MoviesList />
+      </main>
+      <footer>
+        <hr/>
+        &copy; {new Date().getFullYear()}
+      </footer>
+    </>
   );
 }
 
